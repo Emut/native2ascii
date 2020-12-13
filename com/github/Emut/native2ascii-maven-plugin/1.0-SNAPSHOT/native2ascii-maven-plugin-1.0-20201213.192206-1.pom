@@ -55,8 +55,6 @@
                     <includes>
                         <include>**/*</include>
                     </includes>
-<!--                    <userName>emut</userName>-->
-<!--                    <password>ked1l1hub</password>-->
                     <repositoryName>native2ascii-maven-plugin</repositoryName> <!-- github repo name -->
                     <repositoryOwner>Emut</repositoryOwner> <!-- organization or user name  -->
                 </configuration>
