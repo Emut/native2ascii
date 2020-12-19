@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>native2ascii-maven-plugin Maven Mojo</name>
+      <prefix>native2ascii</prefix>
+      <artifactId>native2ascii-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

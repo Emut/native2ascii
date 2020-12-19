@@ -3,9 +3,10 @@
   <groupId>com.github.Emut</groupId>
   <artifactId>native2ascii-maven-plugin</artifactId>
   <versioning>
+    <latest>1.0-SNAPSHOT</latest>
     <versions>
       <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20201214185537</lastUpdated>
+    <lastUpdated>20201219224952</lastUpdated>
   </versioning>
 </metadata>
