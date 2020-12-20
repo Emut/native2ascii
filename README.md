@@ -1,6 +1,8 @@
 # native2ascii
 Convert special characters to ISO-8859-1 format
 
+<img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Emut/native2ascii-maven-plugin"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Emut/native2ascii-maven-plugin"> <img src="https://img.shields.io/badge/maven-1.0--SNAPSHOT-yellow">
+
 To use with Maven, add below snippet to project's pom.xml
 ```html
 <dependencies>
