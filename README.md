@@ -5,7 +5,7 @@ To use with Maven, add below snippet to project's pom.xml
 ```html
 <dependencies>
     <dependency>
-        <groupId>com.github.Emut</groupId>
+        <groupId>com.github.emut</groupId>
         <artifactId>native2ascii-maven-plugin</artifactId>
         <version>1.0-SNAPSHOT</version>
     </dependency>
