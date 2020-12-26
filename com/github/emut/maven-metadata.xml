@@ -3,7 +3,7 @@
   <plugins>
     <plugin>
       <name>native2ascii-maven-plugin Maven Mojo</name>
-      <prefix>native2ascii</prefix>
+      <prefix>mysql-jdbc-compliance</prefix>
       <artifactId>native2ascii-maven-plugin</artifactId>
     </plugin>
   </plugins>
