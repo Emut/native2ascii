@@ -11,6 +11,8 @@ public class FileParameters {
     String commentPrefix = "#";
     @Parameter
     String commentPostfix = "";
+    @Parameter
+    boolean commentOriginal = true;
 
     public String getInputFile() {
         return inputFile;

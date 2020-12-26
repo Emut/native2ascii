@@ -7,12 +7,10 @@ import java.util.ArrayList;
 
 public class Hello {
     public static void main(String[] args){
-        System.out.println("hi caran");
-
         ConversionParameters cp = new ConversionParameters();
         FileParameters fp = new FileParameters();
-        fp.inputFile = "in.properties";
-//        fp.inputFile = "out.properties";
+//        fp.inputFile = "in.properties";
+        fp.inputFile = "out.properties";
         fp.outputFile = "out.properties";
         ArrayList<FileParameters> alfp = new ArrayList<FileParameters>();
         alfp.add(fp);
