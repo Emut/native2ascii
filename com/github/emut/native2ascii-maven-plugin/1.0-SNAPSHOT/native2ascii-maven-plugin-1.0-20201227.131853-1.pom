@@ -7,7 +7,7 @@
     <groupId>com.github.emut</groupId>
     <artifactId>native2ascii-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>native2ascii-maven-plugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
@@ -29,12 +29,6 @@
             <artifactId>maven-project</artifactId>
             <version>2.2.1</version>
         </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.8.0</version>
-        </dependency>
-
     </dependencies>
 
     <properties>
@@ -53,30 +47,7 @@
 
 
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-plugin-plugin</artifactId>
-                <version>3.6.0</version>
-<!--                <configuration>-->
-<!--                    <goalPrefix>mysql-jdbc-compliance</goalPrefix>-->
-<!--                </configuration>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>default-descriptor</id>-->
-<!--                        <goals>-->
-<!--                            <goal>descriptor</goal>-->
-<!--                        </goals>-->
-<!--                        <phase>process-classes</phase>-->
-<!--                    </execution>-->
-<!--                    <execution>-->
-<!--                        <id>help-descriptor</id>-->
-<!--                        <goals>-->
-<!--                            <goal>helpmojo</goal>-->
-<!--                        </goals>-->
-<!--                        <phase>process-classes</phase>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-            </plugin>
+
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.7</version>
