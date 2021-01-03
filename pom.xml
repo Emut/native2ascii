@@ -3,15 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.github.emut</groupId>
     <artifactId>native2ascii-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
     <version>1.0-SNAPSHOT</version>
-
     <name>native2ascii-maven-plugin Maven Mojo</name>
     <url>http://maven.apache.org</url>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.maven</groupId>
@@ -29,14 +26,10 @@
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
         </dependency>
-
     </dependencies>
-
     <properties>
         <github.global.server>github</github.global.server>
     </properties>
-
-
     <distributionManagement>
         <repository>
             <id>internal.repo</id>
@@ -45,10 +38,7 @@
         </repository>
     </distributionManagement>
     <build>
-
-
         <plugins>
-
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.7</version>
@@ -57,7 +47,6 @@
                     </altDeploymentRepository>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
@@ -85,7 +74,5 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
 
