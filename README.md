@@ -2,9 +2,7 @@
 
 Convert special characters to plain ASCII text
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Emut/native2ascii-maven-plugin">
-<img src="https://img.shields.io/badge/maven-1.0--SNAPSHOT-yellow">
-<img src="https://img.shields.io/github/license/Emut/native2ascii">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Emut/native2ascii-maven-plugin"> <img src="https://img.shields.io/badge/maven-1.0--SNAPSHOT-yellow"> <img src="https://img.shields.io/github/license/Emut/native2ascii">
 
 # Usage
 
