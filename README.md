@@ -207,6 +207,31 @@ Getting=Cr\u00E6\u01B5\u01B4
 
 </td>
 </tr>
+
+<tr>
+<td colspan="2">Conversion comments are added to orphan lines, making future edits easier</td> 
+</tr>
+<tr>
+<td>
+
+```properties
+String=with simple chars
+#an orphan line
+Getting=Cr\u00E6\u01B5\u01B4
+```
+
+</td>
+<td>
+
+```properties
+String=with simple chars
+#an orphan line
+#[n2a]Getting = CræƵƴ
+Getting=Cr\u00E6\u01B5\u01B4
+```
+
+</td>
+</tr>
 </table>
 
 [comment]: <> (note to self: to deploy to github, create 2 files:<br>)
