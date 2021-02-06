@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class FileConverter {
@@ -47,6 +49,21 @@ public class FileConverter {
                 sb.append(line);
                 sb.append(fp.commentPostfix);
                 sb.append('\n');
+                sb.append(converted);
+                sb.append('\n');
+                continue;
+            }
+            String reverseConverted = reverseConvert(line);
+            if(reverseConverted != line){
+                //there is an escaped unicode string, add comment above
+                sb.append(fp.commentPrefix);
+                sb.append(CONVERSION_PREFIX);
+                sb.append(reverseConverted);
+                sb.append(fp.commentPostfix);
+                sb.append('\n');
+                sb.append(line);
+                sb.append('\n');
+                continue;
             }
             sb.append(converted);
             sb.append('\n');
@@ -75,6 +92,20 @@ public class FileConverter {
         }
         if (hasConvertedChar)
             return sbline.toString();
+        return input;
+    }
+
+    private static String reverseConvert(String input) {
+        Pattern pattern = Pattern.compile("\\\\u[a-fA-F0-9][a-fA-F0-9][a-fA-F0-9][a-fA-F0-9]");
+        Matcher matcher = pattern.matcher(input);
+        while (matcher.find()) {
+            String match = matcher.group();
+            short s = Short.parseShort(match.substring(2), 16);
+            char c = (char) s;
+            input = matcher.replaceFirst(String.valueOf(c));
+            matcher = pattern.matcher(input);
+        }
+
         return input;
     }
 
